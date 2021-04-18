@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Messenger</string>
+
+    <string name="forgot_password">Forgot password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="goToMessenger">Go to Messenger</string>
+
+    <string name="log_in_title_text">Register or login</string>
+    <string name="log_in_verify_text">Follow the link from the email to verify your account</string>
+    <string name="logged_in_text">You are logged in</string>
+    <string name="reload">Reload</string>
+
+
+</resources>
