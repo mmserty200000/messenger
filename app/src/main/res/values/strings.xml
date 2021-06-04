@@ -3,6 +3,7 @@
 
     <string name="forgot_password">Forgot password</string>
     <string name="sign_in">Sign In</string>
+    <string name="save">Save</string>
     <string name="create_account">Create Account</string>
     <string name="send_link">Send Link</string>
     <string name="sign_out">Sign Out</string>
@@ -14,6 +15,8 @@
     <string name="signed_out">Signed Out</string>
 
     <string name="hint_email">Email</string>
+    <string name="hint_nickname">Nickname</string>
+    <string name="hint_status">Status (everyone will see it)</string>
     <string name="hint_password">Password</string>
     <string name="auth_failed">Authentication failed</string>
     <string name="start_phone_auth">Start</string>
@@ -25,9 +28,13 @@
     <string name="goToMessenger">Go to Messenger</string>
 
     <string name="log_in_title_text">Register or login</string>
+    <string name="little_about_you">Little about you</string>
+
     <string name="log_in_verify_text">Follow the link from the email to verify your account</string>
     <string name="logged_in_text">You are logged in</string>
     <string name="reload">Reload</string>
-
-
+    <string name="just_now">just now</string>
+    <string name="some_min_ago">m ago</string>
+    <string name="some_hours_ago">h ago</string>
+    <string name="enter_message">Enter message</string>
 </resources>

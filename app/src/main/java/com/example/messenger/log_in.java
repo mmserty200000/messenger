@@ -21,6 +21,10 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class log_in extends AppCompatActivity {
 
@@ -89,8 +93,11 @@ public class log_in extends AppCompatActivity {
         goToMessengerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(log_in.this, listofdialogs.class);
-                startActivity(intent);
+                FirebaseUser currentUser = mAuth.getCurrentUser();
+                if(currentUser != null) {
+                    Intent intent = new Intent(log_in.this, listofdialogs.class);
+                    startActivity(intent);
+                }
             }
         });
         mAuth = FirebaseAuth.getInstance();
@@ -210,13 +217,11 @@ public class log_in extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
                     updateUI(mAuth.getCurrentUser());
-                    Toast.makeText(getApplicationContext(),
-                            "Reload successful!",
-                            Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(),
-                            "Failed to reload user.",
-                            Toast.LENGTH_SHORT).show();
+                    FirebaseUser currentUser = mAuth.getCurrentUser();
+                    if(currentUser != null) {
+                        Intent intent = new Intent(log_in.this, listofdialogs.class);
+                        startActivity(intent);
+                    }
                 }
             }
         });
